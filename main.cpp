@@ -1,25 +1,24 @@
 #include <iostream>
-#include <string>
-#include <vector>
 using namespace std;
-
-class BaseUser {
-public:
-	void SetLastName(string lName) {
-		lastName = lName;
-	};
-	virtual void PrintItem(){
-		cout << "Player Last Name: ";
-		cout << lastName;
-	};
-protected:
-	string lastName;
+ 
+class compsci2
+{ 
+public: 
+    int a, b;
+         
+        // Default Constructor
+    compsci2()
+    {
+        a = 10;
+        b = 20;
+    }
 };
-
-
-
+ 
 int main()
 {
-	
-return 0;
+        // Default constructor called automatically
+        // when the object is created
+    compsci2 object;
+    cout << "a: "<< object.a << endl << "b: "<< object.b;
+    return 1;
 }
